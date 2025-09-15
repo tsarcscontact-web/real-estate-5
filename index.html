@@ -126,7 +126,7 @@
         </div>
 
         <a-scene
-            mindar-image="imageTargetSrc: ./assets/targets.mind; showStats: false; uiScanning: #example-scanning-overlay; filterBeta: 10; filterMinCF: 0.1; warmupTolerance: 1; missTolerance: 1;"
+            mindar-image="imageTargetSrc: ./assets/targets.mind; showStats: false; uiScanning: #example-scanning-overlay; filterBeta: 0.02; filterMinCF: 0.05; warmupTolerance: 2; missTolerance: 3;"
             embedded color-space="sRGB" id="asin" renderer="colorManagement: true, physicallyCorrectLights"
             vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-assets>
@@ -217,6 +217,5 @@
 
     </script>
 </body>
-
 
 </html>
