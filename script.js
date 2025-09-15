@@ -230,7 +230,7 @@ document.querySelector("a-scene").addEventListener("loaded", () => {
 const saveBtn = document.getElementById('save-btn');
 
 saveBtn.addEventListener('click', () => {
-    const imagePath = "https://yourdomain.com/photo.png"; // <-- put your file path or URL here
+    const imagePath = "https://github.com/tsarcscontact-web/real-estate-5/blob/main/assets/NP-LOGO-Navy-H.png?raw=true"; // <-- put your file path or URL here
 
     const vCard = `
 BEGIN:VCARD
@@ -240,7 +240,7 @@ FN:Arthur Ambarchyan
 TEL;TYPE=CELL:8182303228
 TEL;TYPE=WHATSAPP:8182303228
 EMAIL:arthur@example.com
-PHOTO;VALUE=URI;TYPE=PNG:${./assets/NP-LOGO-Navy-H.png}  // <-- add your image path here
+PHOTO;VALUE=URI;TYPE=PNG:${imagePath}  // <-- add your image path here
 END:VCARD
     `.trim();
 
