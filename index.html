@@ -1,0 +1,221 @@
+<html>
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DV7E4FNT5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6DV7E4FNT5');
+    </script>
+    <title>The A-team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+
+
+    <link rel="stylesheet" href="style.css" />
+
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Fullscreen Loader -->
+    <div id="loader">
+        <div>Initializing AR experience...</div>
+        <div class="loader-bar-bg">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+    </div>
+
+    <div class="example-container">
+
+        <div id="example-scanning-overlay" class="">
+            <div class="inner">
+                <img src="./assets/card2.png" />
+                <div class="scanline"></div>
+            </div>
+        </div>
+
+        <div id="hide-details" class="hidden">
+            <div class="hider-inner">
+                <img class="logo-main" src="./assets/NP-LOGO-Navy-H.png" alt="">
+                <video width="" preload="auto" height="" poster="./assets/playpng.png" controls class="hider-video">
+                    <source src="./assets/viddeo1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="socialmediaicon">
+                    <a href="https://www.instagram.com/arthur.ambarchyan/" class="icone-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-instagram">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg></a>
+                    <a href="https://www.facebook.com/national.propertiesla" class="icone-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg></a>
+                    <a href="https://www.youtube.com/@arthur.ambarchyan" class="icone-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-youtube">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg></a>
+                    <a href="https://www.linkedin.com/company/arthur-ambarchyan-re/" class="icone-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></a>
+                </div>
+                <div class="contact">
+                    <a href="tel:8182303228" class="icone-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-phone-call">
+                            <path
+                                d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg></a>
+                    <a href="https://www.ateamla.com/" class="icone-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-globe">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg></a>
+
+                    <a href="mailto:arthur@example.com" class="icone-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-mail">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg></a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="save-btn" class="save-contact">
+            <button visible=false href="">Save Conatct</button>
+        </div>
+
+        <a-scene
+            mindar-image="imageTargetSrc: ./assets/targets.mind; showStats: false; uiScanning: #example-scanning-overlay; filterBeta: 10; filterMinCF: 0.1; warmupTolerance: 1; missTolerance: 1;"
+            embedded color-space="sRGB" id="asin" renderer="colorManagement: true, physicallyCorrectLights"
+            vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+            <a-assets>
+                <img id="card" src="./assets/bg-2.png" />
+
+                <img id="icon-profile" src="./assets/nail-site.png" />
+                <img id="icon-email" src="./assets/lash-site.png" />
+                <img id="icon-location" src="./assets/fb.png" />
+                <img id="icon-web" src="./assets/insta.png" />
+                <img id="icon-yt" src="./assets/youtube.png" />
+                <img id="icon-tt" src="./assets/LINKED-IN.png" />
+                <img id="logo-text" src="./assets/kiata-text.png" />
+
+                <img id="icon-left" src="./assets/left.png" />
+                <img id="icon-right" src="./assets/right.png" />
+                <img id="paintandquest-preview" src="./assets/playpng.png" />
+                <video id="paintandquest-video-mp4" autoplay="false" loop="true" src="./assets/viddeo1.mp4"></video>
+                <video id="paintandquest-video-webm" autoplay="false" loop="true" src="./assets/viddeo1.mp4"></video>
+                <img id="slide_1" src="./assets/video/mesh_shield.jpg" />
+                <img id="slide_2" src="./assets/video/P8_logo.jpg" />
+                <img id="port-2-image" src="./assets/text.png" />
+            </a-assets>
+
+            <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;"
+                raycaster="far: 10000; objects: .clickable">
+            </a-camera>
+
+            <!-- Marker Target -->
+            <a-entity id="mytarget" mytarget mindar-image-target="targetIndex: 0">
+                <a-plane src="#card" position="0 0 0" height="0.6" width="1" rotation="0 0 0"></a-plane>
+
+                <a-entity visible=false id="portfolio-panel" position="0 0 -0.01">
+
+                    <a-entity id="portfolio-item0">
+                        <a-video id="paintandquest-video-link" webkit-playsinline playsinline width="1" height="0.552"
+                            position="0 0 0"></a-video>
+                        <a-image id="paintandquest-preview-button" class="clickable" src="#paintandquest-preview"
+                            alpha-test="0.5" position="0 0 0.001" height="0.552" width="1">
+                        </a-image>
+                    </a-entity>
+                    <a-entity id="portfolio-item1" visible=false>
+                        <a-image class="clickable" src="#slide_1" alpha-test="0.5" position="0 0 0" height="0.552"
+                            width="1">
+                        </a-image>
+                    </a-entity>
+                    <a-entity id="portfolio-item2" visible=false>
+                        <a-image class="clickable" src="#slide_2" alpha-test="0.5" position="0 0 0" height="0.5"
+                            width="1">
+                        </a-image>
+                    </a-entity>
+
+                    <a-image visible=false id="portfolio-left-button" class="clickable" src="#icon-left"
+                        position="-0.7 0 0" height="0" width="0"></a-image>
+                    <a-image visible=false id="portfolio-right-button" class="clickable" src="#icon-right"
+                        position="0.7 0 0" height="0" width="0"></a-image>
+                </a-entity>
+
+                <a-entity visible=false id="portfolio-panel-2" position="0 0 -0.01">
+                    <a-image id="port-text-image" class="clickable" src="#port-2-image" position="0 0.02 0" height="0.5"
+                        width="1"></a-image>
+                </a-entity>
+
+                <!-- Buttons -->
+                <a-image visible=false id="profile-button" class="clickable" src="#icon-profile"
+                    position="-0.095 0.1 0.001" height="0.12" width="0.5"></a-image>
+                <a-image visible=false id="email-button" class="clickable" src="#icon-email" alpha-test="0.5"
+                    position="-0.095 -0.1 0.001" height="0.12" width="0.5"></a-image>
+                <a-image visible=false id="location-button" class="clickable" src="#icon-location"
+                    position="0.62 0.24 0" height="0.12" width="0.12"></a-image>
+                <a-image visible=false id="web-button" class="clickable" src="#icon-web" position="0.62 0.066 0"
+                    height="0.12" width="0.12"></a-image>
+                <a-image visible=false id="youtube-button" class="clickable" src="#icon-yt" position="0.62 -0.1 0"
+                    height="0.12" width="0.12"></a-image>
+                <a-image visible=false id="tiktok-button" class="clickable" src="#icon-tt" position="0.62 -0.27 0"
+                    height="0.12" width="0.12"></a-image>
+
+                <a-text id="text" class="clickable" zOffset="0.1" font="exo2bold" color="#1C75BC" align="center"
+                    width="3" position="0 -0.73 0"></a-text>
+            </a-entity>
+
+        </a-scene>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
