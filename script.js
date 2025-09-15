@@ -230,6 +230,8 @@ document.querySelector("a-scene").addEventListener("loaded", () => {
 const saveBtn = document.getElementById('save-btn');
 
 saveBtn.addEventListener('click', () => {
+    const imagePath = "https://yourdomain.com/photo.png"; // <-- put your file path or URL here
+
     const vCard = `
 BEGIN:VCARD
 VERSION:3.0
@@ -238,18 +240,16 @@ FN:Arthur Ambarchyan
 TEL;TYPE=CELL:8182303228
 TEL;TYPE=WHATSAPP:8182303228
 EMAIL:arthur@example.com
+PHOTO;VALUE=URI;TYPE=PNG:${./assets/NP-LOGO-Navy-H.png}  // <-- add your image path here
 END:VCARD
-  `.trim();
+    `.trim();
 
-    // Detect if user is on iPhone/iPad
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
     if (isIOS) {
-        // iOS: open in Contacts (no download, shows "Add Contact")
         const vcfData = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vCard);
         window.location.href = vcfData;
     } else {
-        // Android/Desktop: trigger .vcf download
         const blob = new Blob([vCard], { type: 'text/vcard' });
         const url = URL.createObjectURL(blob);
 
@@ -262,6 +262,7 @@ END:VCARD
         URL.revokeObjectURL(url);
     }
 });
+
 
 
 
